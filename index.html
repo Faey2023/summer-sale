@@ -36,12 +36,12 @@
   </head>
   <body class="sans bg-[#F8F8F8]">
     <!-- banner  -->
-    <section>
-      <div class="hero min-h-screen bg-[#F9F6E2]">
+    <section class="bg-[#F9F6E2]">
+      <div class="hero min-h-screen">
         <div class="hero-content flex-col text-center lg:flex-row-reverse">
           <img
             src="images/Summer 1.png"
-            class="max-w-lg rounded-lg shadow-2xl"
+            class="rounded-lg shadow-2xl lg:max-w-lg"
           />
           <div>
             <h4 class="text-colBlack text-3xl font-medium mb-11">
@@ -64,7 +64,9 @@
       </div>
     </section>
     <!-- cart & cards  -->
-    <section class="container mx-auto mt-28 mb-5 flex bg-[#F8F8F8]">
+    <section
+      class="container mx-auto mt-28 mb-5 flex bg-[#F8F8F8] flex-col lg:flex-row"
+    >
       <div>
         <!-- kitchenware container  -->
         <h1 class="text-colBlack text-4xl font-semibold mb-8">Kitchenware</h1>
@@ -386,7 +388,6 @@
                 placeholder="Coupon Code"
               />
               <button
-                onclick="couponBtn()"
                 id="coupon"
                 class="btn join-item bg-colPink text-white rounded-lg"
                 disabled
@@ -401,8 +402,8 @@
           <ul id="cart"></ul>
           <hr />
           <p>Total price: <span id="totalProductPrice">00</span></p>
-          <p>Discount : <span id="discount"></span></p>
-          <p id="totalP">Total:</p>
+          <p>Discount: <span id="discount"></span></p>
+          <p>Total: <span id="total"></span></p>
           <hr class="mb-3" />
           <!-- Open the modal using ID.showModal() method -->
           <button

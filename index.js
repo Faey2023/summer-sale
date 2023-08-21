@@ -13,6 +13,18 @@ function product(target) {
   if (totalPrice >= 200) {
     document.getElementById("coupon").disabled = false;
   }
+  //coupon
+  const couponApply = document.getElementById("coupon");
+  couponApply.addEventListener("click", function () {
+    const couponCodeField = document.getElementById("coupon-code");
+    const couponCode = couponCodeField.value;
+    const discount = totalPrice * 0.2;
+    if (couponCode == "SELL200") {
+      document.getElementById("discount").innerText = discount;
+    } else {
+      alert("Coupon code not valid");
+    }
+  });
 }
 // reusable function
 function addToCart(productName) {
