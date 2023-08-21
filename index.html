@@ -34,7 +34,7 @@
       };
     </script>
   </head>
-  <body class="sans">
+  <body class="sans bg-[#F8F8F8]">
     <!-- banner  -->
     <section>
       <div class="hero min-h-screen bg-[#F9F6E2]">
@@ -64,14 +64,18 @@
       </div>
     </section>
     <!-- cart & cards  -->
-    <section class="mt-28 ml-5 flex bg-[#F8F8F8]">
+    <section class="container mx-auto mt-28 mb-5 flex bg-[#F8F8F8]">
       <div>
         <!-- kitchenware container  -->
         <h1 class="text-colBlack text-4xl font-semibold mb-8">Kitchenware</h1>
-        <div class="flex-1">
+        <div class="">
           <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
             <!-- item1 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <div
+              id="spoon"
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod1.png"
@@ -84,37 +88,40 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-1"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
-                    class="mask mask-star-2 bg-orange-400"
-                    checked
-                  />
-                  <input
-                    type="radio"
-                    name="rating-7"
+                    name="rating-1"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-1"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
                 <h2 class="text-xl font-semibold text-colBlack">Spoons Set</h2>
-                <p>39.00TK</p>
               </div>
+              <p class="text-xl mb-20">39.00 TK</p>
             </div>
             <!-- item2 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <div
+              id=""
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod2.png"
@@ -127,39 +134,43 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-2"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-2"
                     class="mask mask-star-2 bg-orange-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-2"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-2"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-2"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
                 <h2 class="text-xl font-semibold text-colBlack">
                   Cutting Board Set
                 </h2>
-                <p>25.00TK</p>
               </div>
+              <p class="text-xl mb-20">25.00 TK</p>
             </div>
             <!-- item3 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <div
+              id=""
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod3.png"
@@ -172,36 +183,36 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-3"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-3"
                     class="mask mask-star-2 bg-orange-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-3"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-3"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-3"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
                 <h2 class="text-xl font-semibold text-colBlack">
                   Non-stick Cookware
                 </h2>
-                <p>49.00TK</p>
               </div>
+              <p class="text-xl mb-20">49.00 TK</p>
             </div>
           </div>
 
@@ -211,10 +222,13 @@
         <h1 class="text-colBlack text-4xl font-semibold mb-8 mt-14">
           Furniture
         </h1>
-        <div class="flex-1">
+        <div class="">
           <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
-            <!-- item1 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <!-- item4 -->
+            <div
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod7.png"
@@ -227,39 +241,42 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-4"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-4"
                     class="mask mask-star-2 bg-orange-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-4"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-4"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-4"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
                 <h2 class="text-xl font-semibold text-colBlack">
                   Single Relax Chair
                 </h2>
-                <p>185.00TK</p>
               </div>
+              <p class="text-xl mb-20">185.00 TK</p>
             </div>
-            <!-- item2 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <!-- item5 -->
+            <div
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod8.png"
@@ -272,39 +289,42 @@
                 <div class="rating rating-md">
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-5"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-5"
                     class="mask mask-star-2 bg-orange-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-5"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-5"
                     class="mask mask-star-2 bg-orange-400"
                   />
                   <input
                     type="radio"
-                    name="rating-7"
+                    name="rating-5"
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
                 <h2 class="text-xl font-semibold text-colBlack">
                   Children play
                 </h2>
-                <p>299.00TK</p>
               </div>
+              <p class="mb-20 text-xl">299.00 TK</p>
             </div>
-            <!-- item3 -->
-            <div id="" class="card bg-base-100 shadow-xl">
+            <!-- item6 -->
+            <div
+              onclick="product(this)"
+              class="card bg-base-100 shadow-xl text-center"
+            >
               <figure class="items-center px-10 pt-10 bg-colGrey">
                 <img
                   src="images/prod9.png"
@@ -345,15 +365,16 @@
                 <h2 class="text-xl font-semibold text-colBlack">
                   Flexible Sofa
                 </h2>
-                <p>339.00TK</p>
               </div>
+              <p class="mb-20 text-xl">339.00 TK</p>
             </div>
           </div>
 
           <!-- cart container  -->
         </div>
       </div>
-      <div>
+      <!-- 2nd div  -->
+      <div class="mt-16">
         <div>
           <!-- coupon div  -->
           <div class="mx-2 my-5 bg-[#FFF] p-6">
@@ -366,7 +387,9 @@
               />
               <button
                 onclick="couponBtn()"
+                id="coupon"
                 class="btn join-item bg-colPink text-white rounded-lg"
+                disabled
               >
                 Apply
               </button>
@@ -375,16 +398,18 @@
           <div></div>
         </div>
         <div class="mx-2 my-5 bg-[#FFF] p-6 text-colBlack font-medium text-2xl">
-          <p id="cart"></p>
+          <ul id="cart"></ul>
           <hr />
-          <p>Total price:</p>
-          <p>Discount :</p>
-          <p>Total:</p>
+          <p>Total price: <span id="totalProductPrice">00</span></p>
+          <p>Discount : <span id="discount"></span></p>
+          <p id="totalP">Total:</p>
           <hr class="mb-3" />
           <!-- Open the modal using ID.showModal() method -->
           <button
             class="btn bg-colPink text-white text-xl font-semibold"
             onclick="my_modal_5.showModal()"
+            id="btn-purchase"
+            disabled
           >
             Make Purchase
           </button>
@@ -397,7 +422,9 @@
               </p>
               <div class="modal-action">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn text-white bg-colPink">Go Home</button>
+                <button class="btn text-white bg-colPink" id="goHome">
+                  Go Home
+                </button>
               </div>
             </form>
           </dialog>
