@@ -389,7 +389,7 @@
               />
               <button
                 id="coupon"
-                class="btn join-item bg-colPink text-white rounded-lg"
+                class="btn join-item bg-colPink text-white rounded-lg hover:bg-pink-800"
                 disabled
               >
                 Apply
@@ -399,15 +399,15 @@
           <div></div>
         </div>
         <div class="mx-2 my-5 bg-[#FFF] p-6 text-colBlack font-medium text-2xl">
-          <ul id="cart"></ul>
+          <ol id="cart"></ol>
           <hr />
-          <p>Total price: <span id="totalProductPrice">00</span></p>
-          <p>Discount: <span id="discount">00</span></p>
-          <p>Total: <span id="total">00</span></p>
+          <p>Total price: <span id="totalProductPrice">0</span></p>
+          <p>Discount: <span id="discount">0</span></p>
+          <p>Total: <span id="total">0</span></p>
           <hr class="mb-3" />
           <!-- Open the modal using ID.showModal() method -->
           <button
-            class="btn bg-colPink text-white text-xl font-semibold"
+            class="btn bg-colPink text-white text-xl font-semibold hover:bg-pink-800"
             onclick="my_modal_5.showModal()"
             id="btn-purchase"
             disabled
@@ -415,13 +415,13 @@
             Make Purchase
           </button>
           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <form method="dialog" class="modal-box text-center">
-              <img src="images/congo.png" />
+            <form method="dialog" class="modal-box items-center text-center">
+              <img class="ml-36" src="images/congo.png" />
               <h3 class="text-5xl font-bold text-colBlack">Congratulations</h3>
               <p class="py-4 text-colDGrey text-xl font-normal">
                 Your Purchase the product
               </p>
-              <div class="modal-action">
+              <div class="items-center">
                 <!-- if there is a button in form, it will close the modal -->
                 <button class="btn text-white bg-colPink" id="goHome">
                   Go Home

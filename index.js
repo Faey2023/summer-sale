@@ -29,6 +29,11 @@ function product(target) {
       alert("Coupon code not valid");
     }
   });
+  document.getElementById("goHome").addEventListener("click", function () {
+    document.getElementById("totalProductPrice").innerText = 0;
+    document.getElementById("discount").innerText = 0;
+    document.getElementById("total").innerText = 0;
+  });
 }
 // reusable function
 function addToCart(productName) {
