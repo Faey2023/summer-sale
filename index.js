@@ -18,7 +18,11 @@ function product(target) {
   couponApply.addEventListener("click", function () {
     const couponCodeField = document.getElementById("coupon-code");
     const couponCode = couponCodeField.value;
-    const discount = totalPrice * 0.2;
+    const discountTwo = totalPrice * 0.2;
+    const discount = discountTwo.toFixed(2);
+    const totalP = totalPrice - discount;
+    const totalField = document.getElementById("total");
+    totalField.innerText = totalP;
     if (couponCode == "SELL200") {
       document.getElementById("discount").innerText = discount;
     } else {
